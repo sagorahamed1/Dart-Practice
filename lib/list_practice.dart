@@ -44,6 +44,23 @@ void main() {
 
   ///-------------access list with model class-------------------------->
   friendsList.forEach((friend) => print("====> Name : ${friend.name} Age : ${friend.age}"));
+
+
+  ///==================access first or last letter of names list============>
+  List letter = [];
+  namesList.forEach((name) => letter.add(name.split("").last));
+  print("===> letter: $letter");
+
+  ///=================calculate total number from a list===========>
+  var total = listNo.fold( 0, (prev, num) => prev + num);
+  print("===> Total : $total");
+
+
+  ///=================calculate total number from a list===========>
+  var totalAge = friendsList.fold( 0, (prev, fried) => prev + fried.age);
+  print("===> Total Age : $totalAge");
+
+
 }
 
 class Friend {
