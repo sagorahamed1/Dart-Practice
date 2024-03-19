@@ -70,7 +70,9 @@ void main() {
   listNo.shuffle();
   print("===> Random : $listNo");
 
-
+  ///==============add multi list in a list============>
+  List addTwoList = [...listNo,...namesList];
+  print("===> Add Two List : $addTwoList");
 
 }
 
