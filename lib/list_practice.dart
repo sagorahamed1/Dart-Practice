@@ -66,6 +66,10 @@ void main() {
   print("===> Sort : ${listNo}");
   print("===> Reversed : ${listNo.reversed}");
 
+  ///===============ganerate random list items==============>
+  listNo.shuffle();
+  print("===> Random : $listNo");
+
 
 
 }
