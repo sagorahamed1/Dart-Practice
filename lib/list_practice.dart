@@ -52,13 +52,20 @@ void main() {
   print("===> letter: $letter");
 
   ///=================calculate total number from a list===========>
-  var total = listNo.fold( 0, (prev, num) => prev + num);
+  int total = listNo.fold( 0, (prev, num) => prev + num);
   print("===> Total : $total");
 
 
   ///=================calculate total number from a list===========>
-  var totalAge = friendsList.fold( 0, (prev, fried) => prev + fried.age);
+  int totalAge = friendsList.fold( 0, (prev, fried) => prev + fried.age);
   print("===> Total Age : $totalAge");
+
+
+  ///==============small to big number && reversed from a number list=====>
+  listNo.sort();
+  print("===> Sort : ${listNo}");
+  print("===> Reversed : ${listNo.reversed}");
+
 
 
 }
