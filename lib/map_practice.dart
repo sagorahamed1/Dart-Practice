@@ -16,14 +16,30 @@ void main(){
 
    ///------------add key value in map--------------->
    names["degenation"]= "Flutter Developer";
-   print(names);
+   print("===> degenation add : ");
 
    /// -----------access data by key----------------->
-   print("===> ${names["name"]}");
+   print("===> key :  ${names["name"]}");
 
    ///-----------print map by for in loop----------->
    for(var keys in names.keys){
-     print("===> ${keys}");
+     print("===> keys :  ${keys}");
    }
+
+
+   ///-----------print map by for in loop----------->
+   for(var value in names.values){
+     print("===> values : ${value}");
+   }
+
+   ///----------for each--------------------------->
+   names.forEach((key, value) => print("===> for Each : $key and $value"));
+
+   ///----------map update by update method-------->
+   names.update("age", (value) => 30);
+   print("===> update : $names");
+
+
+
 
 }
