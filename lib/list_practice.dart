@@ -42,8 +42,38 @@ void main() {
   print("===> $sum");
 
 
-  ///-------------access list with model class-------------------------->gi
+  ///-------------access list with model class-------------------------->
   friendsList.forEach((friend) => print("====> Name : ${friend.name} Age : ${friend.age}"));
+
+
+  ///==================access first or last letter of names list============>
+  List letter = [];
+  namesList.forEach((name) => letter.add(name.split("").last));
+  print("===> letter: $letter");
+
+  ///=================calculate total number from a list===========>
+  int total = listNo.fold( 0, (prev, num) => prev + num);
+  print("===> Total : $total");
+
+
+  ///=================calculate total number from a list===========>
+  int totalAge = friendsList.fold( 0, (prev, fried) => prev + fried.age);
+  print("===> Total Age : $totalAge");
+
+
+  ///==============small to big number && reversed from a number list=====>
+  listNo.sort();
+  print("===> Sort : ${listNo}");
+  print("===> Reversed : ${listNo.reversed}");
+
+  ///===============ganerate random list items==============>
+  listNo.shuffle();
+  print("===> Random : $listNo");
+
+  ///==============add multi list in a list============>
+  List addTwoList = [...listNo,...namesList];
+  print("===> Add Two List : $addTwoList");
+
 
 
   ///-----------------list.map------------------->
