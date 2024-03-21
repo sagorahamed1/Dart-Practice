@@ -1,12 +1,18 @@
 
+import 'dart:io';
+
 void main(){
 
 
   ///-----------------------leap year-------------------->
-  int year = 2000;
+  print("Enter year__");
+  int year = int.parse(stdin.readLineSync()!);
   if((year % 4 == 0 && year % 100 != 0 || year % 400 == 0)){
-    print("this is leap year");
+    print("This is leap year");
   }else{
     print("This is not leap year");
   }
+
+
+
 }
