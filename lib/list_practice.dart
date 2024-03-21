@@ -42,8 +42,12 @@ void main() {
   print("===> $sum");
 
 
-  ///-------------access list with model class-------------------------->
+  ///-------------access list with model class-------------------------->gi
   friendsList.forEach((friend) => print("====> Name : ${friend.name} Age : ${friend.age}"));
+
+
+  ///-----------------list.map------------------->
+  listNo.map((e) => print("===> map : $e")).toList();
 }
 
 class Friend {
