@@ -16,4 +16,9 @@ void main(){
   ///----------------avoid unnecessary double number---------------------->
   String number = (10.14145454245).toStringAsFixed(2);
   print("===> number : $number and runTimeType : ${number.runtimeType}");
+
+
+  ///===============avoid unnecessary String digit or word===================>
+  String amount = "2.54245224020";
+  print("===> amount : ${amount.substring(0, 4)}");
 }
