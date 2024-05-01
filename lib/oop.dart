@@ -11,4 +11,6 @@ void main(){
   Car car = new Car("BMW", "Green");
   print("===> ${car.price}");
   print("===> ${car.color}");
+
+  print('===> ${car.name}');
 }
