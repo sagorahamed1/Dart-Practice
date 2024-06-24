@@ -78,6 +78,9 @@ void main() {
 
   ///-----------------list.map------------------->
   listNo.map((e) => print("===> map : $e")).toList();
+
+
+  print("===> name List Reversed ${namesList.reversed}");
 }
 
 class Friend {
